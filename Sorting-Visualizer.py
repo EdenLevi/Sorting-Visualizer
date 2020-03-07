@@ -67,8 +67,6 @@ colors = [color_blue for _ in range(array_size)]
 r_pressed = False
 s_pressed = False
 
-merge_index = 0
-
 
 def draw_lines():
     line_x = 2
@@ -315,8 +313,6 @@ def heap_sort(array):
 
     clear_screen()
     draw_lines()
-
-    return array
 
 
 def max_heapify(array, i, size):
