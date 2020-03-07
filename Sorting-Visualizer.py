@@ -9,7 +9,6 @@ win = pygame.display.set_mode((800, 630))
 pygame.display.set_caption("Sorting Algorithm Visualizer")
 pygame.draw.rect(win, (0, 0, 20), (0, 0, 800, 630))
 
-sortSound = pygame.mixer.Sound('tap.wav')
 elapsed_time, start_time = 0, 0
 
 pygame.font.init()
@@ -407,18 +406,8 @@ def draw_circles():
     elif array_size == 10:
         pygame.draw.circle(win, (0, 0, 0), (circle_pos[9][0], circle_pos[9][1]), 3)
 
-    if algorithm == 0:
-        pygame.draw.circle(win, (0, 0, 0), (circle_pos[10][0], circle_pos[10][1]), 3)
-    elif algorithm == 1:
-        pygame.draw.circle(win, (0, 0, 0), (circle_pos[11][0], circle_pos[11][1]), 3)
-    elif algorithm == 2:
-        pygame.draw.circle(win, (0, 0, 0), (circle_pos[12][0], circle_pos[12][1]), 3)
-    elif algorithm == 3:
-        pygame.draw.circle(win, (0, 0, 0), (circle_pos[13][0], circle_pos[13][1]), 3)
-    elif algorithm == 4:
-        pygame.draw.circle(win, (0, 0, 0), (circle_pos[14][0], circle_pos[14][1]), 3)
-    else:
-        print("no algorithm chosen? how lol")
+    pygame.draw.circle(win, (0, 0, 0), (circle_pos[algorithm+10][0], circle_pos[algorithm+10][1]), 3)
+
     pygame.display.update()
 
 
