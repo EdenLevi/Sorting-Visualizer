@@ -8,5 +8,4 @@ A Sorting Algorithm Visualizer scripted in Python using Pygame.
 - Merge Sort
 - Heap Sort
 
-
-![] (merge-sort-gif.gif)
+Please refer to the Wiki page for further information
